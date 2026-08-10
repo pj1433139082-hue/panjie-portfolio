@@ -15,9 +15,17 @@
     .hero h1,.essay h2,.study h2,.decision h2,.research h2,.notes h2{line-height:.99;letter-spacing:-.035em}
     @media(max-width:760px){.hero h1,.essay h2,.study h2,.decision h2,.research h2,.notes h2{line-height:1.04;letter-spacing:-.02em}}
   </style>
+  <style>
+    @media(max-width:760px){
+      .nav{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px}
+      .nav b{display:block;min-width:0;font-size:11px;white-space:nowrap}
+      .nav .logo{display:none}
+      .nav>a:last-child{display:inline-flex;min-height:44px;padding:0 10px;font-size:11px;white-space:nowrap}
+    }
+  </style>
 <script defer src="assets/ui-arrows.js"></script></head>
 <body>
-  <a class="skip" href="#content">跳到内容</a><main class="shell"><nav class="nav" aria-label="页面导航"><b>03 / TIME SERIES</b><span class="logo">预测，先经得起时间。</span><a href="index.html">← 回到主页</a></nav>
+  <a class="skip" href="#content">跳到内容</a><main class="shell"><nav class="nav" aria-label="页面导航"><b>03 / TIME SERIES</b><span class="logo">预测，先经得起时间。</span><a href="index.html">返回主页 ↗</a></nav>
   <header class="hero"><div><span class="number">01 · FORECASTING PRACTICE</span><h1>让模型<br>看不见<br>未来。</h1></div><div class="intro">水质预测不是一次得分竞赛。它需要先固定问题、时间与数据边界，再讨论模型能否在未来时段稳定工作。<br><a href="#content">阅读方法 ↓</a></div></header>
   <section class="essay" id="content"><div class="essay-tag">02 · STATEMENT</div><div><h2>AI 降低编码门槛，<br>没有降低判断门槛。</h2><p>工艺专家配合成熟 AI 工具，确实可以解决很多问题；我的价值不在于把代码写得更复杂，而在于在工艺问题和算法选择之间做判断。面对一个预测任务，我会先定义问题、时间尺度与可用数据，再验证模型是否泄漏、能否跨工况稳定，并追问结果如何进入业务流程。</p><p>AI 编程工具能加快实现，却不能替代这些决策：如果问题定义错了，它只会更快地把错误方案实现出来。</p></div></section>
   <section class="study" id="study"><header><h2>预测任务里，<br>先守住三件事。</h2><p>研究方法的技术判断，不等同于部署结论</p></header><div class="studies"><article class="study-item"><div class="placeholder-mark"><img src="assets/time-series-water-lab.png" alt="水质样本与处理设施的视觉插图" loading="lazy" decoding="async"></div><b>问题与时间尺度</b><span>01 / 03 · 小时预警、日级调度，先定义不同目标</span></article><article class="study-item"><div class="placeholder-mark"><img src="assets/time-series-model-threshold.png" alt="水样、趋势记录与水厂背景的研究工作台视觉插图" loading="lazy" decoding="async"></div><b>数据与模型门槛</b><span>02 / 03 · 先跑强基线，再判断深度模型是否值得</span></article><article class="study-item"><div class="placeholder-mark"><img src="assets/time-series-generalization-ops.png" alt="水厂运行记录与澄清池的泛化验证视觉插图" loading="lazy" decoding="async"></div><b>泛化与业务落点</b><span>03 / 03 · 评估跨工况稳定性，明确谁来使用结果</span></article></div></section>

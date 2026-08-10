@@ -15,9 +15,16 @@
     .hero h1,.piece h2,.note h2,.play h2{line-height:.98;letter-spacing:-.038em}
     @media(max-width:760px){.hero h1,.piece h2,.note h2,.play h2{line-height:1.04;letter-spacing:-.022em}}
   </style>
+  <style>
+    @media(max-width:760px){
+      .nav{gap:10px}
+      .brand{min-width:0;font-size:16px;white-space:nowrap}
+      .nav>a:last-child{display:inline-flex;flex:0 0 auto;min-height:44px;padding:0 10px;font-size:11px;white-space:nowrap}
+    }
+  </style>
 <script defer src="assets/ui-arrows.js"></script></head>
 <body>
-  <a class="skip" href="#content">跳到内容</a><main class="shell"><nav class="nav" aria-label="页面导航"><span class="brand">现场 · 数据 · 模型</span><div class="navlinks"><a href="#content">ABOUT</a><a href="#notes">NOTES</a><a href="#play">ROUTES</a></div><a href="index.html">ALL WORK ↗</a></nav>
+<a class="skip" href="#content">跳到内容</a><main class="shell"><nav class="nav" aria-label="页面导航"><span class="brand">现场 · 数据 · 模型</span><div class="navlinks"><a href="#content">ABOUT</a><a href="#notes">NOTES</a><a href="#play">ROUTES</a></div><a href="index.html">返回主页 ↗</a></nav>
   <header class="hero"><div class="hero-copy"><span class="postcard"><i></i>FIELD NOTE / SELECTED PRACTICE</span><h1>从<br><span>现场</span><br>走到模型。</h1><p>网易的自动化实践让我先理解稳定交付；安道麦辉丰的智慧水务实习再把我带到数据、工艺与风险的真实现场。两段经历让我从“做技术”转向追问：它能否长期服务真实业务。</p></div><div class="hero-art" role="img" aria-label="污水处理设施巡检场景的视觉插图"></div></header>
   <div class="ribbon" aria-hidden="true"><span>  OBSERVE / ORGANIZE / VERIFY / MODEL   OBSERVE / ORGANIZE / VERIFY / MODEL   OBSERVE / ORGANIZE / VERIFY / MODEL  </span></div>
   <section class="piece" id="content"><div class="practice-side"><div class="piece-tag">01 / PRACTICE</div><div class="practice-gallery" aria-label="三段现场实践的图片图版"><figure class="practice-figure is-active" id="practice-inspection" data-practice-panel="inspection" aria-hidden="false"><img src="assets/water-practice-inspection-v2.png" alt="污水处理厂池体旁的巡检记录与防护手套" loading="lazy" decoding="async"><figcaption class="practice-caption">01 / 工艺巡检</figcaption></figure><figure class="practice-figure" id="practice-archive" data-practice-panel="archive" aria-hidden="true"><img src="assets/water-practice-archive-v2.png" alt="水厂背景下的监测趋势记录、水样与资料归档桌面" loading="lazy" decoding="async"><figcaption class="practice-caption">02 / 数据归档</figcaption></figure><figure class="practice-figure" id="practice-anomaly" data-practice-panel="anomaly" aria-hidden="true"><img src="assets/water-practice-anomaly-v2.png" alt="运行记录、仪表、水样与澄清池共同构成的异常回溯场景" loading="lazy" decoding="async"><figcaption class="practice-caption">03 / 异常协作</figcaption></figure><p class="practice-status" aria-live="polite">当前图版：工艺巡检</p></div></div><div><h2>现场经历，<br>给算法<span class="boundary">边界</span>。</h2><p>在化工园区污水处理厂的巡检、SCADA 数据归档、水质化验与异常排查中，我看到了模型外面那层更真实的条件：传感器漂移、通信中断、化验频次与工况变化。</p><div class="points" aria-label="选择现场实践，查看对应图版"><button class="point is-active" type="button" data-practice="inspection" aria-pressed="true" aria-controls="practice-inspection"><b>01</b><span>工艺巡检<br>把预处理、生化、二沉与深度处理串进判断</span></button><button class="point" type="button" data-practice="archive" aria-pressed="false" aria-controls="practice-archive"><b>02</b><span>数据归档<br>将连续监测数据整理为可复查的工程记录</span></button><button class="point" type="button" data-practice="anomaly" aria-pressed="false" aria-controls="practice-anomaly"><b>03</b><span>异常协作<br>参与出水指标异常的历史回溯与原因排查</span></button></div></div></section>

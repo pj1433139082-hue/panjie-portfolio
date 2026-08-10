@@ -9,11 +9,18 @@
     .chapter-main h2,.catalog-head h2,.appendix h2{line-height:.99;letter-spacing:-.032em}
     @media(max-width:760px){.hero h1{line-height:1;letter-spacing:-.028em}.chapter-main h2,.catalog-head h2,.appendix h2{line-height:1.05;letter-spacing:-.02em}}
   </style>
+  <style>
+    @media(max-width:760px){
+      .head{grid-template-columns:minmax(0,1fr) auto;gap:10px}
+      .head span{min-width:0;font-size:11px;white-space:nowrap}
+      .head>a:last-child{display:inline-flex;min-height:44px;padding:0 10px;font-size:11px;white-space:nowrap}
+    }
+  </style>
 <script defer src="assets/ui-arrows.js"></script></head>
 <body>
   <a class="skip" href="#project">跳到内容</a>
   <main class="page">
-    <nav class="head" aria-label="页面导航"><b>04 / AI ENGINEERING</b><span>从模型能力到业务能力</span><a href="index.html">← 回到主页</a></nav>
+  <nav class="head" aria-label="页面导航"><b>04 / AI ENGINEERING</b><span>从模型能力到业务能力</span><a href="index.html">返回主页 ↗</a></nav>
     <header class="hero"><div><span class="issue">WATER AI / ENGINEERING NOTE</span><h1>水务 AI<br>工程应用</h1></div><aside class="abstract"><b>WORKING DEFINITION</b>算法部署解决的是：<br>“模型能不能跑起来”。<br><br>AI 工程化解决的是：<br>“这项能力能否长期、稳定、<br>安全地服务业务”。<br><br>评价标准不是 Demo 跑通，<br>而是真实流程里能否持续产生价值。</aside></header>
     <nav class="index" aria-label="内容目录"><a href="#project">I. 立项判断</a><a href="#data">II. 数据分流</a><a href="#rollout">III. 影子运行</a><a href="#boundary">IV. 角色与边界</a></nav>
     <section class="chapter reveal" id="project"><div class="chapter-no">I / PROJECT FIT</div><div class="chapter-main"><h2>先问值不值得做，<br>再问用什么模型。</h2><p>如果给我一个水厂 AI 项目，我不会从模型名开始。先把业务价值、数据条件、上线风险和长期运营放在同一张判断表里；四项条件共同成立，项目才值得进入实现阶段。</p></div><aside class="margin-note"><strong>项目不是算法练习</strong>降本、提效、提质或控风险，都需要有明确 KPI 与可承接的业务动作。</aside><div class="gate-list" aria-label="AI 项目四项判断"><article class="gate"><span class="gate-no">01</span><h3>业务价值</h3><p>它解决的是药耗、出水稳定性、操作效率还是异常风险？先把目标转成可观察的 KPI，避免“做一个 AI”成为项目本身的目标。</p></article><article class="gate"><span class="gate-no">02</span><h3>数据与接入</h3><p>检查数据质量、采集频率、时间对齐、权限与现有系统接口。不是只有“有没有数据”，还要判断数据能否持续、合规地进入流程。</p></article><article class="gate"><span class="gate-no">03</span><h3>风险与控制</h3><p>异常怎样处理？谁审核？何时回退？怎样留痕？生产场景里，模型离线正确不等于可以直接影响控制动作。</p></article><article class="gate"><span class="gate-no">04</span><h3>投入与运营</h3><p>除了开发，还要估算改造、维护、监控和迭代成本。能够持续运行，才比一次性 Demo 更接近业务价值。</p></article></div></section>

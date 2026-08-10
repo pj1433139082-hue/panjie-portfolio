@@ -13,9 +13,16 @@
     h2{line-height:1.02;letter-spacing:-.03em}
     @media(max-width:760px){h1{line-height:.98;letter-spacing:-.03em}h2{line-height:1.06;letter-spacing:-.022em}}
   </style>
+  <style>
+    @media(max-width:760px){
+      .nav{gap:10px}
+      .nav b{min-width:0;font-size:11px;white-space:nowrap}
+      .nav>a:last-child{display:inline-flex;flex:0 0 auto;min-height:44px;padding:0 10px;font-size:11px;white-space:nowrap}
+    }
+  </style>
 <script defer src="assets/ui-arrows.js"></script></head>
 <body>
-  <a class="skip" href="#content">跳到内容</a><main class="shell"><nav class="nav" aria-label="页面导航"><b>01 / PERSONAL SYSTEM</b><div class="navlinks"><a href="#system">SYSTEM</a><a href="#proof">PRACTICE</a><a href="#demo">ROUTES</a></div><a href="index.html">← ALL WORK</a></nav>
+  <a class="skip" href="#content">跳到内容</a><main class="shell"><nav class="nav" aria-label="页面导航"><b>01 / PERSONAL SYSTEM</b><div class="navlinks"><a href="#system">SYSTEM</a><a href="#proof">PRACTICE</a><a href="#demo">ROUTES</a></div><a href="index.html">返回主页 ↗</a></nav>
   <header class="hero"><div><div class="kicker">LABORATORY WORKFLOW / IN USE</div><h1>把工作<br><em>交给流程</em></h1><p class="lead">以工作流为单位完成任务分流、知识检索、执行审批与结果验收。重点不是堆叠工具，而是让每一步都知道该由谁、在什么边界内完成。</p></div><aside class="meter" aria-label="智能体管家工作流视觉插图"><small>PERSONAL OPERATING SYSTEM</small><img src="assets/agent-workflow-editorial.png" alt="研究与工程工作台的视觉插图"><b>STATUS · 实验室日常使用</b></aside></header>
   <div class="ticker"><span>ROUTE TASKS / RETRIEVE CONTEXT / REVIEW ACTIONS / VERIFY DELIVERY &nbsp;&nbsp;&nbsp; ROUTE TASKS / RETRIEVE CONTEXT / REVIEW ACTIONS / VERIFY DELIVERY &nbsp;&nbsp;&nbsp;</span></div>
   <section class="block" id="content"><div class="label"><b>01 / SYSTEM</b><span>FLOW<br>CONTEXT<br>DELIVERY</span></div><div class="content" id="system"><h2>先判断任务，<br>再调用能力。</h2><p>我把个人知识与执行环境整理成一条可切换的工作路径：日常任务不加载整套系统，只取完成当下问题所需的最小上下文。</p><div class="module-grid"><article class="module"><b>01.A / ENTRY</b><p>任务入口：按任务类型选择轻量、研究或深度复核路径。</p></article><article class="module"><b>01.B / KNOWLEDGE</b><p>知识检索：以笔记、文献与 Markdown 为权威来源，检索只辅助判断。</p></article><article class="module"><b>01.C / DELIVERY</b><p>协作交付：把计划、执行、复核与验收串成可回看的过程。</p></article></div></div></section>
