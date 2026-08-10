@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>潘杰 / 高对比工作室入口</title>
+  <style>
+    :root{--ink:#102322;--lime:#d6ff22;--coral:#f05e41;--paper:#f4efe4;--muted:#b9c9c3;--line:rgba(244,239,228,.36);--aqua:#b8d8d0}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-family:"Noto Sans SC","Microsoft YaHei",sans-serif}a{color:inherit;text-decoration:none}.skip{position:fixed;top:-80px;left:16px;z-index:20;padding:12px;background:var(--lime);color:var(--ink)}.skip:focus{top:16px}.frame{width:min(calc(100% - 64px),1600px);margin:auto}
+    .head{display:flex;justify-content:space-between;align-items:center;gap:18px;min-height:88px;border-bottom:1px solid var(--line);font-size:12px;font-weight:800;letter-spacing:.14em}.back{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 14px;border:1px solid var(--lime);color:var(--lime);white-space:nowrap;transition:transform .2s ease,background .2s ease,color .2s ease}.back:hover,.back:focus-visible{background:var(--lime);color:var(--ink);transform:translateY(-2px);outline:none}
+    .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,360px);gap:clamp(42px,8vw,150px);align-items:end;padding:clamp(60px,7vw,116px) 0 58px}.eyebrow{display:flex;align-items:center;gap:9px;margin-bottom:22px;color:var(--coral);font-size:11px;font-weight:800;letter-spacing:.15em}.eyebrow:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 6px rgba(240,94,65,.14)}.hero h1{max-width:none;margin:0;white-space:nowrap;font:clamp(4.4rem,6vw,6.2rem)/.89 "Noto Serif SC","Songti SC",serif;letter-spacing:-.07em}.hero h1 strong{color:var(--lime);font-weight:inherit}.hero-copy p{max-width:33ch;margin:26px 0 0;color:var(--muted);font:16px/1.78 "Noto Serif SC","Songti SC",serif}
+    .portrait-card{justify-self:end;width:min(100%,340px);height:370px;margin:0;position:relative;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;padding:26px 26px 0;background:var(--aqua);box-shadow:14px 14px 0 rgba(214,255,34,.16)}.portrait-card img{display:block;width:78%;height:100%;object-fit:cover;object-position:50% 26%;border:1px solid rgba(16,35,34,.62);background:#fff}.portrait-card figcaption{position:absolute;left:14px;top:14px;padding:7px 9px;background:var(--ink);color:var(--lime);font-size:9px;font-weight:800;letter-spacing:.13em}
+    .routes{display:grid;grid-template-columns:minmax(190px,.33fr) minmax(0,1fr);gap:clamp(34px,7vw,120px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0 24px}.routes-meta{display:flex;flex-direction:column;justify-content:space-between;gap:24px}.routes-meta b{color:var(--lime);font-size:11px;letter-spacing:.15em}.routes-meta p{max-width:19ch;margin:0;color:#9aaba5;font:15px/1.7 "Noto Serif SC","Songti SC",serif}.route-list{border-top:1px solid var(--line)}.route{appearance:none;width:100%;min-height:68px;padding:12px 8px 12px 0;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--paper);display:grid;grid-template-columns:58px minmax(0,1fr) 28px;gap:16px;align-items:center;text-align:left;font-family:inherit;cursor:pointer;transition:padding .2s ease,color .2s ease,background .2s ease}.route:hover,.route:focus-visible,.route[aria-pressed=true]{padding-left:12px;color:var(--lime);background:linear-gradient(90deg,rgba(214,255,34,.1),transparent 50%);outline:none}.route .no{font-size:11px;font-weight:800;letter-spacing:.15em}.route .label{font:clamp(1.25rem,1.95vw,1.8rem)/1 "Noto Serif SC","Songti SC",serif;letter-spacing:-.04em}.route .go{justify-self:end;font-size:22px}.detail{min-height:54px;margin:17px 0 0;border-left:3px solid var(--coral);padding:2px 0 2px 15px;color:var(--muted);font:15px/1.65 "Noto Serif SC","Songti SC",serif}.detail small{display:block;margin-bottom:5px;color:var(--coral);font:800 10px/1 "Noto Sans SC","Microsoft YaHei",sans-serif;letter-spacing:.13em}
+    .ticker{overflow:hidden;white-space:nowrap;background:var(--coral);color:var(--ink);padding:12px 0;font-size:11px;font-weight:800;letter-spacing:.1em}.ticker span{display:inline-block;animation:marquee 15s linear infinite}.footer{padding:20px 0 38px;color:#9aaba5;font-size:12px}@keyframes marquee{to{transform:translateX(-30%)}}
+    @media(max-width:760px){.frame{width:min(calc(100% - 32px),1600px)}.head{min-height:72px;font-size:10px;letter-spacing:.1em}.back{padding:0 10px;font-size:10px}.hero{grid-template-columns:1fr;gap:32px;padding:58px 0 38px}.hero h1{white-space:normal;font-size:4.25rem;line-height:.91}.hero-copy p{font-size:15px}.portrait-card{justify-self:start;width:min(100%,270px);height:300px}.routes{grid-template-columns:1fr;gap:24px;padding-top:24px}.routes-meta{gap:10px}.routes-meta p{max-width:31ch}.route{grid-template-columns:48px minmax(0,1fr) 24px;gap:10px;min-height:70px}.route .label{font-size:1.28rem}.detail{font-size:14px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker span{animation:none}.back,.route{transition:none}}
+  </style>
+<script defer src="assets/ui-arrows.js"></script></head>
+<body>
+  <a class="skip" href="#routes">跳到作品入口</a>
+  <main class="frame">
+    <header class="head"><b>潘杰 / SELECTED WORK</b><a class="back" href="navigation-options.html">← 方案目录</a></header>
+    <section class="hero" aria-label="高对比工作室入口">
+      <div class="hero-copy"><div class="eyebrow">02 / STUDIO</div><h1>从现场出发，<br><strong>向系统走。</strong></h1><p>把现场、数据、判断与工程能力组织成一组可进入、可讲述的作品路径，而不是把“AI”孤立成一页。</p></div>
+      <figure class="portrait-card"><img src="assets/panjie-portrait.png" alt="潘杰职业照"><figcaption>PAN JIE / FIELD TO SYSTEM</figcaption></figure>
+    </section>
+    <section class="routes" id="routes" aria-label="作品入口">
+      <div class="routes-meta"><b>SELECTED ROUTES / 05</b><p>点选查看路径摘要；再次点选进入对应作品页。</p></div>
+      <div><nav class="route-list" aria-label="五条作品路径">
+        <button class="route" data-copy="把任务分流、知识检索、审查与交付组织成可复用的个人工作流。" data-href="tech.html" aria-pressed="true"><span class="no">01</span><span class="label">智能体管家体系</span><span class="go" aria-hidden="true">↗</span></button>
+        <button class="route" data-copy="把异常排查中的检索、引用与权限边界做成可复核的协作路径。" data-href="brand.html" aria-pressed="false"><span class="no">02</span><span class="label">水务 Agent 开发</span><span class="go" aria-hidden="true">↗</span></button>
+        <button class="route" data-copy="在选择模型之前，先检查时间尺度、数据条件与泛化风险。" data-href="minimal.html" aria-pressed="false"><span class="no">03</span><span class="label">时序预测建模</span><span class="go" aria-hidden="true">↗</span></button>
+        <button class="route" data-copy="从项目评估、数据审计到影子运行，讨论人机如何安全协同。" data-href="academic.html" aria-pressed="false"><span class="no">04</span><span class="label">水务 AI 工程应用</span><span class="go" aria-hidden="true">↗</span></button>
+        <button class="route" data-copy="两段实习带来的连续认知：稳定交付、真实数据与现场风险。" data-href="casual.html" aria-pressed="false"><span class="no">05</span><span class="label">现场与成长</span><span class="go" aria-hidden="true">↗</span></button>
+      </nav><p class="detail" aria-live="polite"><small>01 / PATH NOTE</small><span>把任务分流、知识检索、审查与交付组织成可复用的个人工作流。</span></p></div>
+    </section>
+    <div class="ticker" aria-hidden="true"><span>FIELD / DATA / JUDGMENT / ENGINEERING / FIELD / DATA / JUDGMENT / ENGINEERING /</span></div>
+    <footer class="footer">高对比工作室版 / 用强色与清晰的作品路径组织同一组内容。</footer>
+  </main>
+  <script>
+    const routes=[...document.querySelectorAll('.route')];
+    const detail=document.querySelector('.detail span');
+    const detailCode=document.querySelector('.detail small');
+    routes.forEach((route,index)=>route.addEventListener('click',()=>{
+      if(route.getAttribute('aria-pressed')==='true'){location.href=route.dataset.href;return}
+      routes.forEach(item=>item.setAttribute('aria-pressed','false'));
+      route.setAttribute('aria-pressed','true');
+      detailCode.textContent=`0${index+1} / PATH NOTE`;
+      detail.textContent=route.dataset.copy;
+    }));
+  </script>
+</body>
+</html>
